@@ -107,7 +107,8 @@ A segment from the database log file is included next to demonstrate the followi
 
 </br>
 
-*❗️The required elements are being highlighted (𝗕)*
+*❗️The required elements are being highlighted (𝗕)* <br/>
+:loudspeaker: *Hint - the log is sorted by the last commands introduced, so to follow the order of the actions they were inserted, please start from the bottom of the log snippet* 🙂
 
 <pre>
 
