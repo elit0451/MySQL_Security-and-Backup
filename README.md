@@ -225,7 +225,7 @@ A segment from the database log file is included next to demonstrate the followi
 
 The backup technique used for this database is a combination of `full local online logical backup`.
 
-You can install the database from the [backup.sql]() file by the following command:
+You can install the database from the [backup.sql](./backup.sql) file by the following command:
 
 ```bash
 mysql -u root -p < backup.sql
