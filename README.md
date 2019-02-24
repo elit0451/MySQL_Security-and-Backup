@@ -42,11 +42,11 @@ Five users need to be created for the following roles:
 <a name="argumentation"></a>
 ### Granted privileges argumentation
 
-- `inventory` - This user is granted *"read"* and *"write"* permissions to both `products` and `productlines` tables. The reason for that is due to the responsibilities that this role is associated with, viz. to maintain the data about Products and Product Lines.
-- `bookKeeping` - User № 2 is restricted to only perform *"reading"* operations to the `orders` table since they only need to monitor the Orders. 
-- `hr` - The user representing *Human resources* is allowed to execute *"read"* and *"write"* operations on the database, so that they can fetch or update the data in the `users` table. As well as *"read"* the records for all the Customers.
-- `sales` - This user is just given *"write"* permissions to `orders` and `orderdetails`, since user named `bookKeeping` will review the Orders. Additionally, it can *"read"* from the `customers` table.
-- `it` - Maintaining the database would require both *"read"* and *"write"* permissions to the entire database.
+- `inventory` - This user is granted *SELECT, INSERT,* and *UPDATE* permissions to both `products` and `productlines` tables. The reason for that is due to the responsibilities that this role is associated with, viz. to maintain the data about Products and Product Lines.
+- `bookKeeping` - User № 2 is restricted to only perform *SELECT* operations to the `orders` table since they only need to monitor the Orders. 
+- `hr` - The user representing *Human resources* is allowed to execute *SELECT, INSERT, UPDATE* and *DELETE* operations on the database, so that they can fetch, update or delete the data in the `employees` table. As well as *SELECT* the records for all their Offices.
+- `sales` - This user is just given *INSERT* permissions to `orders` and `orderdetails`, since user named `bookKeeping` will review the Orders. Additionally, it can *SELECT* from the `customers` table.
+- `it` - Maintaining the database would require full access to the entire database, therefore, any operation is permitted.
 
 <br/>
 
